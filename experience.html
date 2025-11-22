@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Darab Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            border: 4px solid var(--bg-color);
+        }
+
+        .role-title {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .company-name {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .duration {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .achievements {
+            list-style: none;
+        }
+
+        .achievements li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .achievements li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Darab<span>.dev</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html" class="active">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 style="margin-bottom: 3rem;">Professional Experience</h1>
+
+            <div class="timeline">
+                <!-- I2c-Inc -->
+                <div class="timeline-item">
+                    <h2 class="role-title">Software Engineer</h2>
+                    <span class="company-name">I2c-Inc, Lahore</span>
+                    <div class="duration">June 2024 - Present</div>
+                    <p>Collaborated with a global fintech team to design and develop a complete production-scale module
+                        from scratch using Java and JSP.</p>
+                    <ul class="achievements">
+                        <li><strong>End-to-End Module Development:</strong> Designed and implemented a full module in
+                            Java and JSP, delivering complete business workflows.</li>
+                        <li><strong>Security Implementation:</strong> Applied client- and server-side validations, XSS
+                            prevention, and CSRF protection for sensitive financial data.</li>
+                        <li><strong>Database Engineering:</strong> Authored DDL scripts and implemented audit trails for
+                            row updates and modifications.</li>
+                        <li><strong>Query Optimization:</strong> Analyzed execution plans to improve SQL queries,
+                            preventing bottlenecks at banking scale.</li>
+                        <li><strong>Technology Upgrade:</strong> Migrated legacy systems from Java 8 to Java 21,
+                            enabling modern features.</li>
+                    </ul>
+                </div>
+
+                <!-- Devsinc -->
+                <div class="timeline-item">
+                    <h2 class="role-title">Software Engineer</h2>
+                    <span class="company-name">Devsinc, Lahore</span>
+                    <div class="duration">March 2023 - June 2024</div>
+                    <p>Designed and delivered scalable applications for startups, working across the full stack with
+                        Django, Flask, React, and Vue.</p>
+                    <ul class="achievements">
+                        <li><strong>Full-Stack Development:</strong> Built robust backends in Django/Flask and
+                            interactive frontends in React/Vue.</li>
+                        <li><strong>Cloud Deployment (AWS):</strong> Deployed applications using Elastic Beanstalk, RDS,
+                            S3, and Amplify.</li>
+                        <li><strong>Automation & CI/CD:</strong> Built end-to-end pipelines with GitHub Actions to
+                            automate build, test, and deployment.</li>
+                        <li><strong>Microservices:</strong> Developed microservices-based architectures using Docker for
+                            modularity and scalability.</li>
+                    </ul>
+                </div>
+
+                <!-- Arbisoft -->
+                <div class="timeline-item">
+                    <h2 class="role-title">Intern</h2>
+                    <span class="company-name">Arbisoft, Lahore</span>
+                    <div class="duration">July 2022 - September 2022</div>
+                    <ul class="achievements">
+                        <li>Gained expertise in Django Rest Framework (DRF) for robust application development.</li>
+                        <li>Demonstrated proficiency in front-end development using React with TypeScript.</li>
+                        <li>Refined communication skills within a professional work environment.</li>
+                    </ul>
+                </div>
+
+                <!-- Qasim Ali Shah Foundation -->
+                <div class="timeline-item">
+                    <h2 class="role-title">Fellowship</h2>
+                    <span class="company-name">Qasim Ali Shah Foundation, Lahore</span>
+                    <div class="duration">April 2022 - March 2023</div>
+                    <ul class="achievements">
+                        <li>Completed a 1-year fellowship focusing on personal development and soft skills.</li>
+                        <li>Acquired proficiency in Python and Django.</li>
+                        <li>Developed projects using Django and ReactJS, applying technical skills in practical
+                            scenarios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/darab-ahmed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/darabahmed37" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:darabahmed37@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Darab Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
